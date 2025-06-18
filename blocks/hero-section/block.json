@@ -1,0 +1,49 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "visioni-periferiche/hero-section",
+    "version": "1.0.0",
+    "title": "Hero Section",
+    "category": "visioni-blocks",
+    "icon": "format-video",
+    "description": "Full screen hero section with video background",
+    "supports": {
+        "html": false,
+        "align": ["full", "wide"],
+        "color": {
+            "text": true,
+            "background": true
+        }
+    },
+    "attributes": {
+        "videoUrl": {
+            "type": "string",
+            "default": ""
+        },
+        "title": {
+            "type": "string",
+            "default": "VISIONI PERIFERICHE"
+        },
+        "subtitle": {
+            "type": "string",
+            "default": "29 AGOSTO - 3 SETTEMBRE 2024"
+        },
+        "description": {
+            "type": "string",
+            "default": "Dove il cinema incontra le periferie"
+        },
+        "buttonText": {
+            "type": "string",
+            "default": "SCOPRI IL FESTIVAL"
+        },
+        "buttonUrl": {
+            "type": "string",
+            "default": "#intro"
+        }
+    },
+    "textdomain": "visioni-periferiche",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "render": "file:./render.php"
+}

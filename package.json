@@ -1,0 +1,13 @@
+{
+  "name": "visioni-periferiche-theme",
+  "version": "1.0.0",
+  "description": "WordPress block theme for Visioni Periferiche Festival",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "packages-update": "wp-scripts packages-update"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.0.0"
+  }
+}

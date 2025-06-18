@@ -1,0 +1,60 @@
+/* ---------------------------------------------- */
+/* Sponsor Section */
+/* ---------------------------------------------- */
+
+#sponsor {
+    background-color: var(--background-color);
+}
+
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.sponsor-logo {
+    // background-color: var(--white);
+    // border: 1px solid #eee;
+    border-radius: 8px;
+    // padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.sponsor-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sponsor-logo img {
+    width: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.sponsor-logo h5 {
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .sponsor-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150, 1fr));
+        gap: 1rem;
+    }
+
+    .sponsor-logo {
+        height: 150px;
+    }
+    .sponsor-logo img {
+        max-height: 100px;
+        max-width: 100px;
+    }
+}

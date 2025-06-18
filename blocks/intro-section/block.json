@@ -1,0 +1,38 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "visioni-periferiche/intro-section",
+    "version": "1.0.0",
+    "title": "Introduction Section",
+    "category": "visioni-blocks",
+    "icon": "images-alt2",
+    "description": "Introduction section with text and image carousel",
+    "supports": {
+        "html": false,
+        "align": ["full", "wide"],
+        "color": {
+            "text": true,
+            "background": true
+        }
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": "IL FESTIVAL"
+        },
+        "content": {
+            "type": "string",
+            "default": "Visioni Periferiche è il festival del cinema e delle periferie, un appuntamento annuale che esplora il rapporto tra il cinema e i territori marginali, dando voce a storie che raramente trovano spazio nel mainstream. Un ponte tra centro e periferia, tra locale e globale, tra passato e futuro."
+        },
+        "images": {
+            "type": "array",
+            "default": []
+        }
+    },
+    "textdomain": "visioni-periferiche",
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css",
+    "viewScript": "file:./view.js",
+    "render": "file:./render.php"
+}
