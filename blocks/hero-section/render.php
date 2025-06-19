@@ -7,7 +7,7 @@
  * @param   WP_Block $block - The block instance.
  */
 
-$video_url = $attributes['videoUrl'] ?: get_template_directory_uri() . '/assets/video/intro.mp4';
+$video_url = $attributes['videoUrl'] ?: get_template_directory_uri() . '/assets/video/trailer-edizione-2024.mp4';
 $title = $attributes['title'];
 $subtitle = $attributes['subtitle'];
 $description = $attributes['description'];
