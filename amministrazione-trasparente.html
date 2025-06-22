@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amministrazione Trasparente – Visioni Periferiche</title>
+  <!-- Tailwind (CDN for quick demo) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: "#ffd800",
+              black: "#000000"
+            }
+          },
+          fontFamily: {
+            heading: ["Oswald", "sans-serif"],
+            body: ["Inter", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@600&display=swap" rel="stylesheet" />
+</head>
+<body class="font-body bg-white text-brand-black leading-relaxed selection:bg-brand-yellow selection:text-brand-black">
+  <!-- ================ NAVBAR ================ -->
+  <header id="top" class="fixed inset-x-0 top-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4" x-data="{open:false}">
+      <a href="index.html#top" class="flex items-center gap-2 text-lg font-heading font-bold uppercase tracking-wide text-brand-black hover:text-brand-yellow">
+        <img src="assets/img/logo-black.svg" alt="Visioni Periferiche" class="h-8 w-auto" />
+      </a>
+      <ul class="hidden items-center gap-8 text-sm font-medium md:flex">
+        <li><a class="hover:text-brand-yellow" href="index.html#festival">Festival</a></li>
+        <li><a class="hover:text-brand-yellow" href="index.html#programma">Programma</a></li>
+        <li><a class="hover:text-brand-yellow" href="index.html#artisti">Artisti</a></li>
+        <li><a class="hover:text-brand-yellow" href="index.html#contatti">Contatti</a></li>
+        <li><a class="text-brand-yellow" href="#">Amministrazione</a></li>
+      </ul>
+      <!-- mobile hamburger -->
+      <button id="nav-toggle" class="block md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5m-16.5 5.25h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- spacer for fixed navbar -->
+  <div class="h-16"></div>
+
+  <!-- ================ HERO ================ -->
+  <section class="bg-gray-100 py-20 text-center">
+    <h1 class="font-heading text-4xl uppercase tracking-widest text-brand-black md:text-5xl">Amministrazione Trasparente</h1>
+    <p class="mx-auto mt-4 max-w-2xl text-base text-gray-600 md:text-lg">
+      In questa pagina rendiamo disponibili i documenti e le informazioni di interesse pubblico ai sensi del D.Lgs. 33/2013.
+    </p>
+  </section>
+
+  <!-- ================ DOCUMENTS GRID ================ -->
+  <main class="mx-auto max-w-6xl px-6 py-16">
+    <h2 class="mb-10 text-2xl font-semibold text-brand-black">Documenti pubblicati</h2>
+
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Document Card -->
+      <a href="#" class="group flex flex-col justify-between rounded-lg border border-gray-200 p-6 shadow-sm transition hover:shadow-md">
+        <div>
+          <h3 class="font-medium text-lg group-hover:underline">Bilancio Consuntivo 2023</h3>
+          <p class="mt-2 text-sm text-gray-600">Formato PDF – 650 KB</p>
+        </div>
+        <span class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand-yellow">Scarica
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </span>
+      </a>
+
+      <!-- Repeat document cards as needed -->
+    </div>
+  </main>
+
+  <!-- ================ FOOTER ================ -->
+  <footer class="border-t border-gray-200 bg-gray-50 py-8 text-center text-xs text-gray-500">
+    <p>© 2024 Visioni Periferiche – Art & Film Festival. Tutti i diritti riservati.</p>
+  </footer>
+
+  <!-- ================ JS ================ -->
+  <script>
+    // simple mobile nav toggle (reused from index)
+    const toggle = document.getElementById("nav-toggle");
+    const nav = document.querySelector("header nav ul");
+    toggle.addEventListener("click", () => nav.classList.toggle("hidden"));
+  </script>
+</body>
+</html>
