@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy - Visioni Periferiche</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="assets/img/main/favicon.ico" type="image/x-icon">
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              yellow: "#ffd800",
+              black: "#000000"
+            }
+          },
+          fontFamily: {
+            heading: ["Oswald", "sans-serif"],
+            body: ["Inter", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body
+  class="font-body bg-brand-black text-gray-100 leading-relaxed selection:bg-brand-yellow selection:text-brand-black">
+  <!-- ================ NAVBAR ================ -->
+  <header id="top" class="inset-x-0 top-0 z-50 bg-brand-black transition-colors" x-data="{scrolled:false}"
+    x-init="scrolled=window.scrollY>50" @scroll.window="scrolled=window.scrollY>50"
+    :class="scrolled? 'fixed' : 'absolute'">
+    <nav class="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-6 py-4">
+      <a href="index.html" class="flex items-center gap-2 text-lg font-heading font-bold uppercase tracking-wide text-brand-yellow">
+        <img src="assets/img/main/logo_white_horizontal.png" alt="Visioni Periferiche" class="h-10 w-auto" />
+      </a>
+      <!-- mobile hamburger -->
+      <button id="nav-toggle" class="block md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5m-16.5 5.25h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+      <ul class="hidden w-full flex-col gap-4 pt-6 text-sm font-medium md:flex md:w-auto md:flex-row md:items-center md:gap-8 md:pt-0" id="mobile-menu">
+        <li><a class="block px-4 py-3 hover:text-brand-yellow uppercase" href="index.html#festival">Festival</a></li>
+        <li><a class="block px-4 py-3 hover:text-brand-yellow uppercase" href="index.html#programma">Programma</a></li>
+        <li><a class="block px-4 py-3 hover:text-brand-yellow uppercase" href="index.html#ospiti">Ospiti</a></li>
+        <li><a class="block px-4 py-3 hover:text-brand-yellow uppercase" href="index.html#sponsor">Sponsor</a></li>
+        <li><a class="block px-4 py-3 hover:text-brand-yellow uppercase" href="index.html#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- spacer for fixed navbar -->
+  <div class="h-[72px]"></div>
+
+  <!-- ================ PRIVACY POLICY CONTENT ================ -->
+  <section class="py-20">
+    <div class="mx-auto max-w-4xl px-6">
+      <h1 class="mb-12 font-heading text-4xl uppercase text-brand-yellow text-center">Privacy Policy</h1>
+      
+      <div class="prose prose-invert prose-lg mx-auto">
+        <p class="text-gray-300 mb-8">
+          La presente informativa descrive le modalità di trattamento dei dati personali degli utenti che consultano il sito web di Visioni Periferiche - Art & Film Festival e che utilizzano i nostri servizi.
+        </p>
+
+        <h2 class="font-heading text-2xl text-brand-yellow mt-10 mb-4">1. Titolare del trattamento</h2>
+        <p class="text-gray-300 mb-6">
+          Il titolare del trattamento dei dati è l'associazione Keep Rolling, con sede legale in Bitonto (BA).<br>
+          Email: <a href="mailto:info@visioniperiferichefestival.com" class="text-brand-yellow hover:underline">info@visioniperiferichefestival.com</a>
+        </p>
+
+        <h2 class="font-heading text-2xl text-brand-yellow mt-10 mb-4">2. Dati raccolti</h2>
+        <p class="text-gray-300 mb-4">I dati personali raccolti attraverso il sito possono includere:</p>
+        <ul class="list-disc list-inside text-gray-300 mb-6 ml-4">
+          <li>Nome e cognome</li>
+          <li>Indirizzo email</li>
+          <li>Numero di telefono (se fornito)</li>
+          <li>Messaggi inviati tramite il form di contatto</li>
+          <li>Dati di navigazione (indirizzo IP, browser utilizzato, pagine visitate)</li>
+        </ul>
+
+        <h2 class="font-heading text-2xl text-brand-yellow mt-10 mb-4">3. Finalità del trattamento</h2>
+        <p class="text-gray-300 mb-4">I dati personali sono trattati per le seguenti finalità:</p>
+        <ul class="list-disc list-inside text-gray-300 mb-6 ml-4">
+          <li>Rispondere alle richieste di informazioni</li>
+          <li>Gestire le prenotazioni per gli eventi</li>
+          <li>Inviare comunicazioni relative al festival (previo consenso)</li>
+          <li>Adempiere agli obblighi di legge</li>
+          <li>Migliorare l'esperienza di navigazione del sito</li>
+        </ul>
+
+        <h2 class="font-heading text-2xl text-brand-yellow mt-10 mb-4">4. Base giuridica</h2>
+        <p class="text-gray-300 mb-6">
+          Il trattamento dei dati si basa su:
+        </p>
+        <ul class="list-disc list-inside text-gray-300 mb-6 ml-4">
+          <li>Consenso dell'interessato per l'invio di comunicazioni promozionali</li>
+          <li>Esecuzione di misure precontrattuali per la gestione delle richieste</li>
+          <li>Legittimo interesse per il miglioramento dei servizi</li>
+        </ul>
+
+        <h2 class="font-heading text-2xl text-brand-yellow mt-10 mb-4">5. Modalità di trattamento</h2>
+        <p class="text-gray-300 mb-6">
+          I dati sono trattati con strumenti elettronici e manuali, adottando misure di sicurezza tecniche e organizzative adeguate per proteggere i dati da accessi non autorizzati, perdita o distruzione.
+        </p>
+
+        <h2 class="font-heading text-2xl text-brand-yellow mt-10 mb-4">6. Comunicazione e diffusione</h2>
+        <p class="text-gray-300 mb-6">
+          I dati personali non saranno diffusi e potranno essere comunicati solo a:
+        </p>
+        <ul class="list-disc list-inside text-gray-300 mb-6 ml-4">
+          <li>Personale autorizzato al trattamento</li>
+          <li>Partner tecnici per la gestione del sito web e dei servizi</li>
+          <li>Autorità competenti in caso di obbligo di legge</li>
+        </ul>
+
+        <h2 class="font-heading text-2xl text-brand-yellow mt-10 mb-4">7. Conservazione dei dati</h2>
+        <p class="text-gray-300 mb-6">
+          I dati personali saranno conservati per il tempo necessario al perseguimento delle finalità per cui sono stati raccolti e comunque non oltre i termini previsti dalla normativa vigente.
+        </p>
+
+        <h2 class="font-heading text-2xl text-brand-yellow mt-10 mb-4">8. Diritti dell'interessato</h2>
+        <p class="text-gray-300 mb-4">L'interessato ha diritto di:</p>
+        <ul class="list-disc list-inside text-gray-300 mb-6 ml-4">
+          <li>Accedere ai propri dati personali</li>
+          <li>Richiedere la rettifica o la cancellazione</li>
+          <li>Opporsi al trattamento</li>
+          <li>Richiedere la limitazione del trattamento</li>
+          <li>Richiedere la portabilità dei dati</li>
+          <li>Revocare il consenso in qualsiasi momento</li>
+          <li>Proporre reclamo all'autorità di controllo</li>
+        </ul>
+
+        <h2 class="font-heading text-2xl text-brand-yellow mt-10 mb-4">9. Cookie</h2>
+        <p class="text-gray-300 mb-6">
+          Il sito utilizza cookie tecnici necessari per il funzionamento e cookie di terze parti per analisi statistiche. Per maggiori informazioni consultare la Cookie Policy.
+        </p>
+
+        <h2 class="font-heading text-2xl text-brand-yellow mt-10 mb-4">10. Modifiche all'informativa</h2>
+        <p class="text-gray-300 mb-6">
+          Il titolare si riserva il diritto di modificare questa informativa in qualsiasi momento. Le modifiche saranno pubblicate su questa pagina con indicazione della data di ultimo aggiornamento.
+        </p>
+
+        <p class="text-gray-400 text-sm mt-12">
+          Ultimo aggiornamento: Giugno 2025
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ FOOTER ================ -->
+  <footer class="bg-brand-black py-12 text-center text-sm text-gray-400">
+    <div class="mx-auto flex max-w-7xl flex-col items-center gap-8 px-6 md:flex-row md:justify-between">
+      <!-- Logo + copyright -->
+      <div class="flex flex-col items-center gap-2 md:items-start">
+        <p class="text-xs">© Keep Rolling - All Rights Reserved.</p>
+      </div>
+
+      <!-- Links -->
+      <nav class="flex flex-col items-center gap-6 md:flex-row">
+        <a href="edizione-2024" class="hover:text-brand-yellow">
+          Edizione 2024
+        </a>
+        <a href="amministrazione-trasparente.html" class="hover:text-brand-yellow">
+          Amministrazione Trasparente
+        </a>
+        <a href="privacy-policy.html" class="hover:text-brand-yellow">
+          Privacy Policy
+        </a>
+        <!-- Socials -->
+        <div class="flex items-center gap-5">
+          <a href="https://www.instagram.com/visioniperiferiche.festival/" aria-label="Instagram"
+            class="hover:text-brand-yellow">
+            <!-- Instagram icon -->
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3-3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3.5A4.5 4.5 0 1 0 16.5 12 4.505 4.505 0 0 0 12 7.5zm0 7.2A2.7 2.7 0 1 1 14.7 12 2.704 2.704 0 0 1 12 14.7zm4.75-8.95a1.05 1.05 0 1 1-1.05 1.05 1.05 1.05 0 0 1 1.05-1.05z" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/p/61560767820407/" aria-label="Facebook" class="hover:text-brand-yellow">
+            <!-- Facebook icon -->
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M22 12a10 10 0 1 0-11.5 9.9V14.8h-2.3v-2.8h2.3V10c0-2.3 1.4-3.6 3.5-3.6 1 0 2 .07 2.3.1v2.6h-1.6c-1.3 0-1.6.8-1.6 1.5v1.9h2.7l-.4 2.8h-2.3v7.1A10 10 0 0 0 22 12z" />
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ================ JS  ================ -->
+  <script>
+    // simple mobile nav toggle
+    const toggle = document.getElementById("nav-toggle");
+    const nav = document.querySelector("header nav ul");
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("hidden"); 
+    });
+  </script>
+</body>
+
+</html>
