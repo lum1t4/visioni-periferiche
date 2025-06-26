@@ -52,13 +52,15 @@
 
     .swiper-button-next,
     .swiper-button-prev {
-      color: #ffd800; /* Use brand yellow */
+      color: #ffd800;
+      /* Use brand yellow */
       top: 50%;
       transform: translateY(-50%);
       width: 44px;
       height: 44px;
       border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.3); /* Add background for better visibility */
+      background-color: rgba(0, 0, 0, 0.3);
+      /* Add background for better visibility */
     }
 
     .swiper-button-next {
@@ -71,28 +73,33 @@
 
     .swiper-button-next:after,
     .swiper-button-prev:after {
-      color: #ffd800; /* Use brand yellow */
+      color: #ffd800;
+      /* Use brand yellow */
       font-size: 20px;
     }
 
     .swiper-pagination {
       bottom: 10px;
-      position: relative; /* Make it part of the flow */
+      position: relative;
+      /* Make it part of the flow */
       margin-top: 1rem;
     }
 
     .swiper-pagination-bullet {
-      background: #FFFFFF; /* Use white */
+      background: #FFFFFF;
+      /* Use white */
       opacity: 0.6;
     }
 
     .swiper-pagination-bullet-active {
-      background: #ffd800; /* Use brand yellow */
+      background: #ffd800;
+      /* Use brand yellow */
       opacity: 1;
     }
 
 
     @media screen and (max-width: 768px) {
+
       .swiper-button-next,
       .swiper-button-prev {
         width: 36px;
@@ -114,16 +121,20 @@
     x-init="scrolled=window.scrollY>50" @scroll.window="scrolled=window.scrollY>50"
     :class="scrolled? 'fixed' : 'absolute'">
     <nav class="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-6 py-4">
-      <a href="#top" class="flex items-center gap-2 text-lg font-heading font-bold uppercase tracking-wide text-brand-yellow">
+      <a href="#top"
+        class="flex items-center gap-2 text-lg font-heading font-bold uppercase tracking-wide text-brand-yellow">
         <img src="assets/img/main/logo_white_horizontal.png" alt="Visioni Periferiche" class="h-10 w-auto" />
       </a>
       <!-- mobile hamburger -->
       <button id="nav-toggle" class="block md:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="h-6 w-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5m-16.5 5.25h16.5m-16.5 5.25h16.5" />
         </svg>
       </button>
-      <ul class="hidden w-full flex-col gap-4 pt-6 text-sm font-medium md:flex md:w-auto md:flex-row md:items-center md:gap-8 md:pt-0" id="mobile-menu">
+      <ul
+        class="hidden w-full flex-col gap-4 pt-6 text-sm font-medium md:flex md:w-auto md:flex-row md:items-center md:gap-8 md:pt-0"
+        id="mobile-menu">
         <li><a class="block px-4 py-3 hover:text-brand-yellow uppercase" href="#festival">Festival</a></li>
         <li><a class="block px-4 py-3 hover:text-brand-yellow uppercase" href="#programma">Programma</a></li>
         <li><a class="block px-4 py-3 hover:text-brand-yellow uppercase" href="#ospiti">Ospiti</a></li>
@@ -139,10 +150,12 @@
 
   <!-- ================ HERO ================ -->
   <section class="relative flex h-[100vh] items-center justify-center overflow-hidden bg-black">
-    <video autoplay loop playsinline muted preload="auto" class="absolute inset-0 h-full w-full object-cover opacity-80 block md:hidden">
-       <source src="assets/video/VP_ProgrammaReel_V4_1080x1920.mp4" type="video/mp4">
+    <video autoplay loop playsinline muted preload="auto"
+      class="absolute inset-0 h-full w-full object-cover opacity-80 block md:hidden">
+      <source src="assets/video/VP_ProgrammaReel_V4_1080x1920.mp4" type="video/mp4">
     </video>
-    <video autoplay loop playsinline muted class="absolute inset-0 h-full w-full object-cover opacity-80 hidden md:block">
+    <video autoplay loop playsinline muted
+      class="absolute inset-0 h-full w-full object-cover opacity-80 hidden md:block">
       <source src="assets/video/trailer-edizione-2025-1080x1920.mp4" type="video/mp4">
     </video>
     <div class="absolute top-3/4 z-10 text-center">
@@ -205,16 +218,26 @@
 
     <div class="swiper-container mt-5">
       <div class="swiper-wrapper">
-        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover" src="assets/img/lookbook/slide_01.jpg" alt="Past event 1"></div>
-        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover" src="assets/img/lookbook/slide_02.jpg" alt="Past event 2"></div>
-        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover" src="assets/img/lookbook/slide_03.jpg" alt="Past event 3"></div>
-        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover" src="assets/img/lookbook/slide_04.jpg" alt="Past event 4"></div>
-        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover" src="assets/img/lookbook/slide_05.jpg" alt="Past event 5"></div>
-        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover" src="assets/img/lookbook/slide_06.jpg" alt="Past event 6"></div>
-        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover" src="assets/img/lookbook/slide_07.jpg" alt="Past event 7"></div>
-        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover" src="assets/img/lookbook/slide_08.jpg" alt="Past event 8"></div>
-        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover" src="assets/img/lookbook/slide_09.jpg" alt="Past event 8"></div>
-        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover" src="assets/img/lookbook/slide_10.jpg" alt="Past event 8"></div>
+        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover"
+            src="assets/img/lookbook/slide_01.jpg" alt="Past event 1"></div>
+        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover"
+            src="assets/img/lookbook/slide_02.jpg" alt="Past event 2"></div>
+        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover"
+            src="assets/img/lookbook/slide_03.jpg" alt="Past event 3"></div>
+        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover"
+            src="assets/img/lookbook/slide_04.jpg" alt="Past event 4"></div>
+        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover"
+            src="assets/img/lookbook/slide_05.jpg" alt="Past event 5"></div>
+        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover"
+            src="assets/img/lookbook/slide_06.jpg" alt="Past event 6"></div>
+        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover"
+            src="assets/img/lookbook/slide_07.jpg" alt="Past event 7"></div>
+        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover"
+            src="assets/img/lookbook/slide_08.jpg" alt="Past event 8"></div>
+        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover"
+            src="assets/img/lookbook/slide_09.jpg" alt="Past event 8"></div>
+        <div class="swiper-slide text-center"><img class="md:w-[100%] h-[300px] md:h-[30vh] object-cover"
+            src="assets/img/lookbook/slide_10.jpg" alt="Past event 8"></div>
       </div>
       <!-- Add navigation buttons -->
       <div class="swiper-button-prev"></div>
@@ -475,11 +498,13 @@
       <div class="flex flex-wrap items-center justify-center gap-10 md:gap-14 lg:gap-20">
         <img src="assets/img/sponsor/logo_01.png" class="object-contain w-[80px] h-[80px]" alt="Edil Tecnica" />
         <img src="assets/img/sponsor/logo_02.png" class="object-contain w-[80px] h-[80px]" alt="Ellegidue" />
-        <img src="assets/img/sponsor/logo_03.png" class="object-contain w-[80px] h-[80px]" alt="Vincenzo Sicolo Arredamenti" />
+        <img src="assets/img/sponsor/logo_03.png" class="object-contain w-[80px] h-[80px]"
+          alt="Vincenzo Sicolo Arredamenti" />
         <img src="assets/img/sponsor/logo_04.png" class="object-contain w-[80px] h-[80px]" alt="PrimoPrezzo" />
         <img src="assets/img/sponsor/logo_05.png" class="object-contain w-[80px] h-[80px]" alt="NegoziOk" />
         <img src="assets/img/sponsor/logo_06.png" class="object-contain w-[80px] h-[80px]" alt="LogisticaPiu" />
-        <img src="assets/img/sponsor/logo_07.png" class="object-contain w-[80px] h-[80px]" alt="Rizzi Arcangelo Ecologica s.r.l." />
+        <img src="assets/img/sponsor/logo_07.png" class="object-contain w-[80px] h-[80px]"
+          alt="Rizzi Arcangelo Ecologica s.r.l." />
         <img src="assets/img/sponsor/logo_08.png" class="object-contain w-[80px] h-[80px]" alt="WeWork" />
         <img src="assets/img/sponsor/logo_09.png" class="object-contain w-[80px] h-[80px]" alt="Sponsor 9" />
         <img src="assets/img/sponsor/logo_10.png" class="object-contain w-[80px] h-[80px]" alt="Sponsor 10" />
@@ -492,15 +517,15 @@
       <hr class="mb-8 border-t border-brand-black/50" />
 
       <div class="flex flex-wrap items-center justify-center gap-10 md:gap-14 lg:gap-20">
-        <img src="assets/img/sponsor/logo_11.png" alt="Partner 1" class=" object-contain w-[80x] h-[80px]"/>
-        <img src="assets/img/sponsor/logo_12.png" alt="Partner 2" class=" object-contain w-[80x] h-[80px]"/>
-        <img src="assets/img/sponsor/logo_13.png" alt="Partner 3" class=" object-contain w-[80x] h-[80px]"/>
-        <img src="assets/img/sponsor/logo_14.png" alt="Partner 4" class=" object-contain w-[80x] h-[80px]"/>
-        <img src="assets/img/sponsor/logo_15.png" alt="Partner 5" class=" object-contain w-[80x] h-[80px]"/>
-        <img src="assets/img/sponsor/logo_16.png" alt="Partner 6" class=" object-contain w-[80x] h-[80px]"/>
-        <img src="assets/img/sponsor/logo_17.png" alt="Partner 7" class=" object-contain w-[80x] h-[80px]"/>
-        <img src="assets/img/sponsor/logo_18.png" alt="Partner 8" class=" object-contain w-[80x] h-[80px]"/>
-        <img src="assets/img/sponsor/logo_19.png" alt="Partner 9" class=" object-contain w-[80x] h-[80px]"/>
+        <img src="assets/img/sponsor/logo_11.png" alt="Partner 1" class=" object-contain w-[80x] h-[80px]" />
+        <img src="assets/img/sponsor/logo_12.png" alt="Partner 2" class=" object-contain w-[80x] h-[80px]" />
+        <img src="assets/img/sponsor/logo_13.png" alt="Partner 3" class=" object-contain w-[80x] h-[80px]" />
+        <img src="assets/img/sponsor/logo_14.png" alt="Partner 4" class=" object-contain w-[80x] h-[80px]" />
+        <img src="assets/img/sponsor/logo_15.png" alt="Partner 5" class=" object-contain w-[80x] h-[80px]" />
+        <img src="assets/img/sponsor/logo_16.png" alt="Partner 6" class=" object-contain w-[80x] h-[80px]" />
+        <img src="assets/img/sponsor/logo_17.png" alt="Partner 7" class=" object-contain w-[80x] h-[80px]" />
+        <img src="assets/img/sponsor/logo_18.png" alt="Partner 8" class=" object-contain w-[80x] h-[80px]" />
+        <img src="assets/img/sponsor/logo_19.png" alt="Partner 9" class=" object-contain w-[80x] h-[80px]" />
       </div>
 
       <!-- 3. SPONSOR TECNICI -->
@@ -521,9 +546,9 @@
       <hr class="mb-8 border-t border-brand-black/50" />
 
       <div class="flex flex-wrap items-center justify-center gap-10 md:gap-14 lg:gap-20">
-        <img src="assets/img/sponsor/logo_22.png" class="object-contain w-[80px] h-[80px]" alt="Food & Beverage 1"/>
-        <img src="assets/img/sponsor/logo_23.png" class="object-contain w-[80px] h-[80px]" alt="Food & Beverage 2"/>
-        <img src="assets/img/sponsor/logo_24.png" class="object-contain w-[80px] h-[80px]" alt="Food & Beverage 3"/>
+        <img src="assets/img/sponsor/logo_22.png" class="object-contain w-[80px] h-[80px]" alt="Food & Beverage 1" />
+        <img src="assets/img/sponsor/logo_23.png" class="object-contain w-[80px] h-[80px]" alt="Food & Beverage 2" />
+        <img src="assets/img/sponsor/logo_24.png" class="object-contain w-[80px] h-[80px]" alt="Food & Beverage 3" />
       </div>
     </div>
   </section>
@@ -558,8 +583,10 @@
         <label class="flex items-start gap-2 text-sm">
           <input type="checkbox" required
             class="mt-1 h-4 w-4 rounded border-gray-600 bg-brand-black/70 text-brand-yellow focus:ring-brand-yellow/40" />
-          <span>Autorizzo il trattamento e il salvataggio dei dati secondo la <a href="#"
-              class="underline hover:text-brand-yellow">Privacy Policy</a></span>
+          <span>
+            Autorizzo il trattamento e il salvataggio dei dati secondo la <a href="privacy-policy.html"
+              class="underline hover:text-brand-yellow">Privacy Policy</a>
+          </span>
         </label>
         <button type="submit"
           class="w-full rounded-md bg-brand-yellow px-6 py-3 font-semibold text-brand-black transition-opacity hover:opacity-90">Invia</button>
@@ -615,7 +642,7 @@
     const nav = document.querySelector("header nav ul");
     toggle.addEventListener("click", () => {
       // This is a very basic toggle, for a real mobile menu a more robust solution is needed
-      nav.classList.toggle("hidden"); 
+      nav.classList.toggle("hidden");
     });
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -627,7 +654,7 @@
           delay: 4000,
           disableOnInteraction: false,
         },
-        
+
         // Navigation & Pagination
         pagination: {
           el: '.swiper-pagination',
